@@ -1,0 +1,25 @@
+@import './mixin.scss';
+page {
+	min-height: 100vh;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: $PFR;
+	font-size: 24rpx;
+}
+@font-face {
+	font-family: 'alternategothicno2bt';
+  src: url('https://static.ws.126.net/f2e/products/relottery/relotteryMobile/trunk/reflowpages/css/alternategothicno2bt.ttf');
+}
+
+.icon-no-data-list {
+  width: 242rpx!important;
+  height: 242rpx!important;
+  @include bg-image('/static/icon-no-data-list.png');
+}
+
+.icon-no-data-match {
+  width: 118rpx!important;
+  height: 150rpx!important;
+  @include bg-image('/static/match-detail/icon-no-data-match.png');
+}

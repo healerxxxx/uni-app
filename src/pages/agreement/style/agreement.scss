@@ -1,0 +1,26 @@
+.agreement-wrapper {
+  view {
+    font-size: 30rpx;
+    line-height: 56rpx;
+    letter-spacing: 0;
+    color: #333;
+    margin: 30rpx;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+  .h3 {
+    font-size: 34rpx;
+    font-weight: bold;
+  }
+  .b {
+    font-weight: bold;
+  }
+  .u {
+    text-decoration-line: underline;
+  }
+  .a {
+    display: inline-block;
+    color: #7696c1;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,36 @@
+<view wx:if="{{isready}}" class="g-bd {{displayClass}}" bindtap="onTap">
+    <view class="g-bd-inner">
+    <view class="m-logo">
+        <image style="{{logoStyle}}" class="u-logo" src="{{ulogo}}"></image>
+    </view>
+    <smsup wx:if="{{isnewsmsup}}" mobile="{{mobilereal}}" uptxt="{{uptxt}}" upnum="{{upnum}}" nodes="{{nodes}}" options="{{options}}" id="smsup" bindbacksmsdown="onBacksmsdown" bindverifyupsms="doVerifyUpSms" bindclearError="clearError"></smsup>
+    <view wx:else>
+        <mobile bindmobileChange="onMobileChange" bindareaChange="onAreaChange" options="{{options}}" bindinputBlur="onInputBlur" bindfocus="onFocus" errorNode="{{errorNode}}" id="mobile"></mobile>
+        <sms smsbtntxt="{{smsbtntxt}}" mobile="{{mobile}}" options="{{options}}" bindfocus="onFocus" errorNode="{{errorNode}}" bindinputBlur="onInputBlur" bindshowConfirm="onShowConfirm" bindcanReSend="onCanReSend" bindshowCap='onShowCap' id="sms"></sms>
+        <view class="m-errbox" style="{{errColor}}">
+            <rich-text nodes="{{nodes}}"></rich-text>
+        </view>
+        <view wx:if="{{!smsup}}" focus="{{focus}}" style="{{buttonStyle}}" bindtap='onLogin' class='u-button'>登录</view>
+        <view style="{{changeColor}}" wx:if="{{!!pwdLoginUrl}}" class='u-changePage' ontap="onRedirectTo" id="changemodule">密码登录</view>
+    </view>
+    <slideCap wx:if="{{capFlag==4||capFlag==5||capFlag==6}}"
+        id="cap{{capFlag}}"
+        capFlag="{{capFlag}}"
+        autoVerify="{{autoVerify}}"
+        lang="zh-CN"
+        screenwidthForCap="{{screenwidthForCap}}"
+        captchaType="jigsaw"
+        capkey="{{capkey}}"
+        aicapkey="{{aicapkey}}"
+        bindfirsterror="onFirstError"
+        bindpopupEnd="onPopupEnd"
+        bindaiInitOk="onAiInitOk"
+        bindclose="onCloseCap"
+        bindcapCheck="onCapCheck"
+        bindcapSuccess="onCapSuccess">
+    </slideCap>
+    </view>
+    <imgCap imgUn="{{imgUn}}" bindgetUn="onGetUn" baseurl="{{imgBaseUrl}}" bindcapCheck="onCapCheck" options="{{options}}" sidkey="{{sidkey}}" id="cap1" wx:if="{{capFlag==1}}" bindcapSuccess="onCapSuccess" bindclose="onCloseCap" screenwidth="{{screenwidth}}"></imgCap>
+    <confirm warnConfirmTxt="{{warnConfirmTxt}}" warnCloseTxt="{{warnCloseTxt}}" alertTxt="{{alertTxt}}" alertShow="{{alertShow}}" warnShow="{{warnShow}}" alertInfo="{{alertInfo}}" wx:if="{{needConfirm}}" bindok="onConfirmOk" bindclose="onConfirmClose"></confirm>
+    <view wx:if="{{canNotInput}}" class="layer"></view>
+</view>

@@ -1,0 +1,175 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "欧洲杯"
+      }
+    },
+    {
+      "path": "pages/football/index",
+      "style": {
+        "navigationStyle":"custom",
+        "navigationBarTitleText": "足球"
+      }
+    },
+    {
+      "path": "pages/basketball/index",
+      "style": {
+        "navigationStyle":"custom",
+        "navigationBarTitleText": "篮球"
+      }
+    },
+    {
+      "path": "pages/match-filter/index",
+      "style": {
+        "navigationBarTitleText": "赛事筛选"
+      }
+    },
+    {
+      "path": "pages/user/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "我的"
+      }
+    },
+    {
+      "path": "pages/user/login",
+      "style": {
+        "navigationBarTitleText": "登录"
+      }
+    },
+    // #ifdef MP-WEIXIN
+    {
+      "path": "pages/user/login-urs",
+      "style": {
+        "navigationBarTitleText": "手机号登录",
+        "usingComponents": {
+          "mobile-login": "/wxcomponents/ursmini/components/mobileLogin/mobileLogin",
+          "mobile-unite-login": "/wxcomponents/ursmini/components/mobileUniteLogin/mobileUniteLogin"
+        }
+      }
+    },
+    // #endif
+    {
+      "path": "pages/user/service",
+      "style": {
+        "navigationBarTitleText": "更多服务"
+      }
+    },
+    {
+      "path": "pages/match-detail/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "赛事详情"
+      }
+    },
+    {
+      "path": "pages/league/index",
+      "style": {
+        "navigationStyle":"custom",
+        "navigationBarTitleText": "联赛积分"
+      }
+    },
+    {
+      "path": "pages/team/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "球队详情"
+      }
+    },
+    {
+      "path": "pages/player/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "球员详情"
+      }
+    },
+    {
+      "path": "pages/bet-assistant/list/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "投注助手"
+      }
+    },
+    {
+      "path": "pages/bet-assistant/detail/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "投注助手详情"
+      }
+    },
+    {
+      "path": "pages/bet-assistant/history/index",
+      "style": {
+        "onReachBottomDistance": 10,
+        "navigationBarTitleText": "投注助手历史"
+      }
+    },
+    {
+      "path": "pages/map/index",
+      "style": {
+        "navigationBarTitleText": "附近的彩票站"
+      }
+    },
+    {
+      "path": "pages/agreement/login",
+      "style": {
+        "navigationBarTitleText": "服务条款"
+      }
+    },
+    {
+      "path": "pages/agreement/privacy",
+      "style": {
+        "navigationBarTitleText": "隐私协议"
+      }
+    },
+    {
+      "path": "pages/download/index",
+      "style": {
+        "navigationBarTitleText": "红彩APP下载"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#FF2222",
+    "backgroundColor": "#F3F5F7",
+    "navigationStyle": "default",
+    "enablePullDownRefresh": false,
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#FC403E",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/icon-tab-home.png",
+        "selectedIconPath": "static/icon-tab-home-select.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/football/index",
+        "iconPath": "static/icon-tab-football.png",
+        "selectedIconPath": "static/icon-tab-football-select.png",
+        "text": "足球"
+      },
+      {
+        "pagePath": "pages/basketball/index",
+        "iconPath": "static/icon-tab-basketball.png",
+        "selectedIconPath": "static/icon-tab-basketball-select.png",
+        "text": "篮球"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "iconPath": "static/icon-tab-user.png",
+        "selectedIconPath": "static/icon-tab-user-select.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

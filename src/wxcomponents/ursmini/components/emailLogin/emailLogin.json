@@ -1,0 +1,10 @@
+{
+    "component": true,
+    "usingComponents": {
+        "email": "../ui/email/email",
+        "password": "../ui/password/password",
+        "imgCap": "../ui/imgCap/imgCap",
+        "confirm": "../ui/confirm/confirm",
+        "slideCap":"../ui/slideCap/slideCap"
+    }
+}

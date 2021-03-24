@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="375px" height="222px" viewBox="0 0 375 222" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>矩形</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 375 0 375 222 0 222 0 146.529182"></polygon>
+        <linearGradient x1="100%" y1="98.2074116%" x2="0%" y2="98.2074116%" id="linearGradient-3">
+            <stop stop-color="#000000" offset="0%"></stop>
+            <stop stop-color="#252625" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="红彩足篮球资料库" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="篮球球员个人信息页">
+            <g id="矩形">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use fill="#333333" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <path d="M0,170.085279 C201.961958,166.992987 320.629742,121.053338 356.003353,32.2663314 C391.376964,-56.5206749 398.309222,-62.346355 376.800129,14.789291 L376.800129,235 L0,235 L0,170.085279 Z" id="路径" fill-opacity="0.08" fill="url(#linearGradient-3)" fill-rule="evenodd" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

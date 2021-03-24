@@ -1,0 +1,4 @@
+<view class="g-bd">
+    <mobileLogin saveTempMobileNm="{{saveTempMobileNm}}" saveTempMobile="{{saveTempMobile}}" wx:if="{{!showUnite}}" bindchangepage="onChangePage" options="{{options}}" class="g-bd"></mobileLogin>
+    <mobileUniteLogin saveTempMobileNm="{{saveTempMobileNm}}" saveTempMobile="{{saveTempMobile}}" wx:if="{{showUnite}}" bindchangepage="onChangePage" options="{{options}}" class="g-bd"></mobileUniteLogin>
+</view>

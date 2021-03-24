@@ -1,0 +1,15 @@
+<view class="m-email {{errorNode}} {{errorNode1}}" style="{{(errorNode=='username-err'||errorNode1=='username-err')?errBgColor:''}}">
+    <slot></slot>
+    <input focus="{{inputFocus}}" placeholder-class="phcolor" class="u-input" placeholder="{{placeholderValue}}" 
+    type="text" bindfocus="onFocus" bindinput="bindEmailInput" value="{{iValue}}"></input>
+    <view class="m-suggest">
+        <suggest id="suggest" bindsuggestChange="onSuggestChange">
+        </suggest>
+    </view>
+    <view wx:if="{{iValue}}" bindtap="onclear">
+        <icon wx:if="{{iValue}}" type="clear" size="16"/>
+    </view>
+    <view wx:else>
+        <text class="u-icon"></text>
+    </view>
+</view>

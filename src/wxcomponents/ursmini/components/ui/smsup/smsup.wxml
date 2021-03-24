@@ -1,0 +1,39 @@
+<view class="smsup-box">
+    <view class="smsup-g-wrapper">
+        <view class="smsup-u-tip smsup-tip0">
+            验证手机号：
+            <text class="smsup-s-fc7">{{ mobile }}</text>
+            <view style="{{buttonStyle}}" class="smsup-s-change">
+                <text bindtap='onBack'>切换手机号</text>
+            </view>
+        </view>
+        <view class="smsup-u-tip smsup-tip1">
+            为了确认您的身份，请用该手机发送短信：
+        </view>
+        <view class="smsup-info-box">
+            <view class="smsup-item">
+                <text class="smsup-tlt">编辑短信：</text>
+                <text class="smsup-info smsup-select-allow">{{ uptxt }}</text>
+                <text class="smsup-copy" ontap="oncopyuptxt">复制</text>
+            </view>
+            <view class="smsup-item">
+                <text class="smsup-tlt smsup-tlt1">发送至：</text>
+                <text class="smsup-info smsup-select-allow">{{ upnum }}</text>
+                <text class="smsup-copy" ontap="oncopyupnum">复制</text>
+            </view>
+        </view>
+        <view class="smsup-u-tip smsup-tip2">
+            系统不会进行短信回复，短信费用由运营商收取。
+        </view>
+        <view class="smsup-w-btn">
+            <view class="smsup-u-tip error"
+                style="{{errColor}}"
+            >
+                <rich-text nodes="{{nodes}}"></rich-text>
+            </view>
+            <view class="u-button right">
+                <button loading="{{loading}}" style="{{buttonStyle}}" bindtap='onVerify' class='u-button'>{{btnTxt}}</button>
+            </view>
+        </view>
+    </view>
+</view>

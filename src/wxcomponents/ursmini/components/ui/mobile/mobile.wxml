@@ -1,0 +1,19 @@
+<view class="m-mobile {{errorNode}} {{errorNode1}}" style="{{(errorNode=='username-err'||errorNode1=='username-err')?errBgColor:''}}">
+    <view class="u-area" bindtap="onChangeArea">
+        <text class="u-label">+{{area}}</text>
+        <text class="u-arrow"></text>
+    </view>
+    <view class="m-section">
+        <areaPicker id="areaPicker" bindareaChange="onAreaChange">
+        </areaPicker>
+    </view>
+    <input focus="{{inputFocus}}" placeholder-class="phcolor" class="u-input" 
+    placeholder="{{placeholderValue}}" type="number" bindfocus="onFocus" 
+    bindinput="onMobileInput" value="{{iValue}}" maxlength="{{maxLength}}"></input>
+    <view wx:if="{{iValue}}" bindtap="onclear">
+        <icon wx:if="{{iValue}}" type="clear" size="16"/>
+    </view>
+    <view wx:else>
+        <text class="u-icon"></text>
+    </view>
+</view>

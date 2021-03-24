@@ -1,0 +1,41 @@
+.m-email {
+  font-size: 17px;
+  background: #F7F7F7;
+  margin: 0 25px 15px;
+  padding-right: 16px;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  position: relative;
+}
+
+.username-err {
+  background: #FFF1F1;
+}
+
+.u-input {
+  height: 45px;
+  line-height: 45px;
+  border: 0;
+  width: 100%;
+}
+
+.u-icon {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+}
+
+.phcolor {
+  color: #B2B2B2;
+}
+
+.m-suggest {
+  background: #fff;
+  box-shadow: 0 6px 30px 0 rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 46px;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+}

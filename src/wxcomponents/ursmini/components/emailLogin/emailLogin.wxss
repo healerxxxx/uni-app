@@ -1,0 +1,8 @@
+/* plugin/components/mobileLogin/login.wxss */
+@import "../mdcommon.wxss";
+.u-password-label {
+  width: 64px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+}

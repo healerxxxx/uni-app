@@ -1,0 +1,23 @@
+<view wx:if="{{copyNumber}}" class="top">
+    <rich-text class="top1" nodes="{{nodes}}"></rich-text><rich-text class="top2" nodes="{{copyNumber}}" bindtap="doCopy"></rich-text>
+</view>
+<view class="m-sms-box {{errorNode}}" style="{{errorNode=='sms-err'?errBgColor:''}}">
+    <view class="left {{nodes?'longLeft':''}}">
+        <view class="m-sms">
+            <input focus="{{inputFocus}}" maxlength="6" placeholder-class="phcolor" class="u-input" 
+            placeholder="{{placeholderValue}}" type="number"
+            bindfocus="onFocus" bindinput="bindSmsInput" value="{{iValue}}" adjust-position="{{adjust}}"></input>
+            <view wx:if="{{iValue}}">
+                <icon wx:if="{{iValue}}" bindtap="onclear" type="clear" size="16"/>
+            </view>
+            <view wx:else>
+                <text class="u-icon"></text>
+            </view>
+            <view class="why" wx:if="{{nodes}}" bindtap="onWhy"><image class="whyImg" src="{{whyImg}}"></image></view>
+        </view>
+    </view>
+    <view class="right {{nodes?'hideRight':''}}">
+        <text wx:if="{{loading}}" style="{{buttonDisColor}}" bindtap='onSendSms' class='u-button {{loading}}'>{{smsbtntxt}}</text>
+        <text wx:else style="{{buttonStyle}}" bindtap='onSendSms' class='u-button'>{{smsbtntxt}}</text>
+    </view>
+</view>

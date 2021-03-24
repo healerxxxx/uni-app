@@ -1,0 +1,6 @@
+<view class="u-suggest {{hideStyle}}" >
+    <view bindtap="onChangeSuggest" id="{{item.val}}" wx:for="{{list}}" wx:key="{{item.val}}">
+        <view wx:if="{{item.val===touchStartNum}}" class="u-item touchstart">{{item.val}}</view>
+        <view wx:else class="u-item">{{item.val}}</view>
+    </view>
+</view>

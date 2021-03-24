@@ -1,0 +1,30 @@
+/* plugin/components/ui/areaPicker/areaPicker.wxss */
+.u-suggest {
+  overflow-y: auto;
+}
+
+.hide {
+  display: none;
+}
+
+.u-item {
+  padding-left: 15px;
+  height: 44px;
+  line-height: 44px;
+  display: block;
+  border-bottom: solid 1px #E5E5E5;
+}
+
+.selected {
+  background: red;
+}
+
+.touchstart {
+  background: #F7F7F7;
+}
+
+@media screen and (orientation: landscape){
+  .u-suggest{
+    max-height: 155px;
+  }
+}

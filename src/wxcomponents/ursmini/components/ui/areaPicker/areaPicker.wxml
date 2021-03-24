@@ -1,0 +1,10 @@
+<scroll-view scroll-y class="u-picker {{hideStyle}}" scroll-into-view="{{toView}}">
+    <view bindtap="onChangeArea" data-nm="{{item.nm}}" id="id-{{item.num}}" wx:for="{{list}}" wx:key="{{item.num}}">
+        <view wx:if="{{item.num===selectedNum && item.nm===selectedNm}}" class="u-item">
+            {{item.cnm}} +{{item.num}}
+            <icon class="success_icon" wx:if="{{item.num===selectedNum && item.nm===selectedNm}}" type="success_no_circle" size="15"/>
+        </view>
+        <view wx:elif="{{item.num===touchStartNum}}" class="u-item touchstart">{{item.cnm}} +{{item.num}}</view>
+        <view wx:else class="u-item">{{item.cnm}} +{{item.num}}</view>
+    </view>
+</scroll-view>

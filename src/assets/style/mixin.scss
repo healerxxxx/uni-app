@@ -1,0 +1,23 @@
+$PFR: "PingFangSC-Regular", sans-serif;
+$PFM: "PingFangSC-Medium", sans-serif;
+$AGN: "alternategothicno2bt", sans-serif;
+
+
+@mixin bg-image ($url) {
+  background-image: url($url)!important;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@mixin gradient-x($color-one, $color-two) {
+  background: -webkit-gradient(Linear, top left, top right, from($color-one), to($color-two));
+  background: -moz-linear-gradient(to right, $color-one, $color-two);
+  background: linear-gradient(to right, $color-one, $color-two);
+}
+
+@mixin gradient-y($color-one, $color-two) {
+  background: -webkit-gradient(Linear, left top, left bottom, from($color-one), to($color-two));
+  background: -moz-linear-gradient(to bottom, $color-one, $color-two);
+  background: linear-gradient(to bottom, $color-one, $color-two);
+}
+  

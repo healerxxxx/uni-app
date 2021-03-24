@@ -1,0 +1,1 @@
+Page({data:{options:{}},onLoad:function(options){Object.keys(options).forEach(function(item){options[item]=decodeURIComponent(options[item])});this.setData({options:options})},onReady:function(){},onShow:function(){},onHide:function(){},onUnload:function(){},onPullDownRefresh:function(){},onReachBottom:function(){},onShareAppMessage:function(){}});

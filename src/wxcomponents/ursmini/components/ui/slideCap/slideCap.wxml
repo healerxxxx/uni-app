@@ -1,0 +1,24 @@
+<ne-captcha
+    wx:if="{{capFlag==6}}"
+    apiServer="{{apiServer}}"
+    id="neCaptcha"
+    lang="zh-CN"
+    captcha-id="{{aicapkey}}"
+    binderror="handlerError"
+    bindready="handlerReady"
+    bindverify="handlerVerify"
+    bindclose="handlerClose"
+></ne-captcha>
+<ne-captcha
+    wx:else
+    apiServer="{{apiServer}}"
+    id="neCaptcha"
+    lang="zh-CN"
+    width="{{screenwidthForCap}}"
+    captchaType="jigsaw"
+    captcha-id="{{capkey}}"
+    binderror="handlerError"
+    bindverify="handlerVerify"
+    bindclose="handlerClose"
+    bindinit="handlerInit"
+></ne-captcha>

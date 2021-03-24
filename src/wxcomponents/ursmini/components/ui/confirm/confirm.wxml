@@ -1,0 +1,18 @@
+<!--plugin/components/ui/confirm/confirm.wxml-->
+<div wx:if="{{alertShow}}" class="m-mask">
+    <div class="m-pop">
+        <div class="pop-info">
+            <rich-text nodes="{{alertInfo}}"></rich-text>
+        </div>
+        <div class="pop-btn" bindtap="onClose">{{alertTxt}}</div>
+    </div>
+</div>
+<div wx:elif="{{warnShow}}" class="m-mask">
+    <div class="m-pop">
+        <div class="pop-info">
+            <rich-text nodes="{{alertInfo}}"></rich-text>
+        </div>
+        <div class="pop-btn left" bindtap="onClose">{{warnCloseTxt}}</div>
+        <div class="pop-btn right" bindtap="onConfirm">{{warnConfirmTxt}}</div>
+    </div>
+</div>

@@ -1,0 +1,85 @@
+.left {
+  padding-right: 120px;
+}
+
+.longLeft {
+  padding-right: 0;
+}
+
+.sms-err .m-sms {
+  background: #FFF1F1;
+}
+
+.why {
+  margin-left: 10px;
+}
+
+.whyImg {
+  width: 16px;
+  height: 16px;
+}
+
+.top {
+  color: #151515;
+  font-size: 12px;
+  line-height: 16.5px;
+  padding: 0 27px 5px;
+}
+
+.top1 {
+  float: left;
+}
+
+.hideRight {
+  display: none;
+}
+
+.m-sms-box {
+  position: relative;
+}
+
+.m-sms {
+  font-size: 17px;
+  background: #F7F7F7;
+  margin: 0 25px;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  padding: 0 16px;
+}
+
+.u-input {
+  height: 45px;
+  line-height: 45px;
+  border: 0;
+  width: 100%;
+}
+
+.u-icon {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+}
+
+.phcolor {
+  color: #B2B2B2;
+}
+
+.u-button {
+  height: 45px;
+  line-height: 45px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  width: 110px;
+  display: block;
+  border-radius: 3px;
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  right: 25px;
+}
+
+.countdown {
+  background: rgba(0, 0, 0, 0.5);
+}

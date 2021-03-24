@@ -1,0 +1,3 @@
+<view class="g-bd">
+    <emailLogin options="{{options}}" class="g-bd"></emailLogin>
+</view>

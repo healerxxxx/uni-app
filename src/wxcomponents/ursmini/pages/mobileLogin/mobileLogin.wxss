@@ -1,0 +1,10 @@
+/* plugin/pages/mobileLogin/mobileLogin.wxss */
+page{
+    width:100%;
+    height:100%;
+    -webkit-user-select:auto;
+}
+.g-bd{
+    width:100%;
+    height:100%;
+}

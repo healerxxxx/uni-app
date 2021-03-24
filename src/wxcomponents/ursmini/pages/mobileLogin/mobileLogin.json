@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+      "mobileLogin": "../../components/mobileLogin/mobileLogin",
+      "mobileUniteLogin": "../../components/mobileUniteLogin/mobileUniteLogin"
+    }
+  }

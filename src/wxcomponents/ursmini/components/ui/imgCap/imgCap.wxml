@@ -1,0 +1,24 @@
+<!--plugin/components/ui/imgCap/imgCap.wxml-->
+<view class="m-pop {{hidden}}">
+    <view class="popcnt">
+        <view class="title">
+            <text>请完成安全验证</text><text bindtap="onClose" class="close"></text>
+        </view>
+        <view class="cap-box">
+            <view class="left">
+                <view class="capInput">
+                    <input disabled="{{disabledValue}}" maxlength="4" placeholder-class="phcolor"
+                    class="u-input" placeholder="{{placeholderValue}}" 
+                    type="text" focus="{{focus}}" bindinput="onCapInput" value="{{capValue}}"></input>
+                        <icon wx:if="{{checkState===1}}" type="success" size="22"/>
+                        <icon wx:elif="{{checkState===0}}" color="red" type="clear" size="22"/>
+                        <text wx:else class="u-icon"></text>
+                </view>
+            </view>
+            <view class="right">
+                <image alt="加载中" class="img" bindtap="onRefresh" src="{{imgurl}}"></image>
+                <view class="imgalt">加载中...</view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,35 @@
+<view wx:if="{{isready}}" class="g-bd {{displayClass}}" bindtap="onTap">
+    <view class="g-bd-inner">
+    <view class="m-logo">
+        <image style="{{logoStyle}}" class="u-logo" src="{{ulogo}}"></image>
+    </view>
+    <mobile bindareaChange="onAreaChange" options="{{options}}" bindfocus="onFocus" errorNode1="{{errorNode1}}" errorNode="{{errorNode}}" id="mobile"></mobile>
+    <password options="{{options}}" bindfocus="onFocus" errorNode2="{{errorNode2}}" errorNode="{{errorNode}}" id="password">
+        <text class="u-password-label"><text style="float:left;">密</text><text style="float:right;">码</text></text>
+    </password>
+    <view class="m-errbox" style="{{errColor}}">
+        <rich-text nodes="{{nodes}}"></rich-text>
+    </view>
+    <view focus="{{focus}}" style="{{buttonStyle}}" bindtap='onLogin' class='u-button'>{{loginbtntxt}}</view>
+    <view style="{{changeColor}}" wx:if="{{!!uniteLoginUrl}}" class='u-changePage' ontap="onRedirectTo" id="changemodule">验证码快捷登录</view>
+    <slideCap wx:if="{{capFlag==4||capFlag==5||capFlag==6}}"
+      id="cap{{capFlag}}"
+      capFlag="{{capFlag}}"
+      autoVerify="{{autoVerify}}"
+      lang="zh-CN"
+      screenwidthForCap="{{screenwidthForCap}}"
+      captchaType="jigsaw"
+      capkey="{{capkey}}"
+      aicapkey="{{aicapkey}}"
+      bindfirsterror="onFirstError"
+      bindpopupEnd="onPopupEnd"
+      bindaiInitOk="onAiInitOk"
+      bindclose="onCloseCap"
+      bindcapCheck="onCapCheck"
+      bindcapSuccess="onCapSuccess">
+    </slideCap>
+    </view>
+    <imgCap imgUn="{{imgUn}}" bindgetUn="onGetUn" baseurl="{{imgBaseUrl}}" bindcapCheck="onCapCheck" options="{{options}}" sidkey="{{sidkey}}" id="cap1" wx:if="{{capFlag==1}}" bindcapSuccess="onCapSuccess" bindclose="onCloseCap" screenwidth="{{screenwidth}}"></imgCap>
+    <confirm warnConfirmTxt="{{warnConfirmTxt}}" warnCloseTxt="{{warnCloseTxt}}" alertTxt="{{alertTxt}}" alertShow="{{alertShow}}" warnShow="{{warnShow}}" alertInfo="{{alertInfo}}" wx:if="{{needConfirm}}" bindok="onConfirmOk" bindclose="onConfirmClose"></confirm>
+    <view wx:if="{{canNotInput}}" class="layer"></view>
+</view>

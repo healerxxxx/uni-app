@@ -1,0 +1,22 @@
+/* plugin/components/mobileUniteLogin/mobileUniteLogin.wxss */
+@import "../mdcommon.wxss";
+.u-password-label {
+  width: 64px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+}
+
+.u-changePage {
+  font-size: 13px;
+  color: #576B95;
+  text-align: center;
+  margin: 38px auto 0;
+  width: 80px;
+  letter-spacing:1px;
+}
+@media screen and (orientation: landscape){
+  .u-changePage{
+      margin-top:10px;
+  }
+}

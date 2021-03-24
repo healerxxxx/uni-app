@@ -1,0 +1,1 @@
+require("./../../runtime"),require("./../../common"),(wx.webpackJsonp=wx.webpackJsonp||[]).push([[6],{18:function(e,s,t){"use strict";var a,o=t(5),r=(a=o)&&a.__esModule?a:{default:a};Component({behaviors:[r.default],externalClasses:["load-captcha-cls"],properties:{status:{type:String,value:"done"}}})}},[[18,1,0]]]);
